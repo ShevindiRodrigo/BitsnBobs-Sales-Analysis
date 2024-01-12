@@ -31,7 +31,7 @@ Power BI Desktop
 
 ## Datamart Structure:
 The following tables constitute the datamart:
-  _ Dimension Tables:
+  _Dimension Tables:
         dimDate
         dimCustomer
         dimStaff
