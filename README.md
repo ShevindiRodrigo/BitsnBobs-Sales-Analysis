@@ -8,9 +8,9 @@ AssignmentTwo2022Data.xls
 Power BI Desktop
 
 ## Process:
-  ### 1. Connect to Data:
+  1. Connect to Data:
         Excel file containing sales data is loaded into Power BI Desktop.
-  ### 2. Transform Data:
+  2. Transform Data:
         Cleaning and manipulation of data to prepare it for analysis.
         Key steps include:
           Identifying and removing duplicate receipt IDs: Queries were used to detect and remove duplicate entries based on receipt IDs.
@@ -19,7 +19,7 @@ Power BI Desktop
             "New Reciept ID": A new unique identifier was created for each receipt to address duplicate issues.
             "Discount Status": Based on the number of items per receipt, a column was added to indicate eligibility for a 5% discount (receipts with 5 or more items).
           Checking data quality: Column Quality tool was used to identify and address null values and data validity issues.
-  ### 3. Load - Datamart Creation:
+  3. Load - Datamart Creation:
           Create six reference tables (dimensions) from the staging table:
             dimDate
             dimCustomer
@@ -31,13 +31,13 @@ Power BI Desktop
 
 ## Datamart Structure:
 The following tables constitute the datamart:
-  ### Dimension Tables:
+  _ Dimension Tables:
         dimDate
         dimCustomer
         dimStaff
         dimItem
         dimOffice
-  ### Fact Table:
+  _Fact Table:
         FactSale
   ### Foreign Keys in FactSale:
         Date_key
